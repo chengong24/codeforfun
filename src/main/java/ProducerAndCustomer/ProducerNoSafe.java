@@ -13,11 +13,11 @@ import java.util.concurrent.ThreadFactory;
 public class ProducerNoSafe implements Runnable {
 
 	private Thread t;
-	private BlockingQueue<Action> queue;
+	private BlockingQueue<AbstractAction> queue;
 
-	private Action temp;
+	private AbstractAction temp;
 
-	public ProducerNoSafe(ThreadFactory threadFactory, BlockingQueue<Action> queue) {
+	public ProducerNoSafe(ThreadFactory threadFactory, BlockingQueue<AbstractAction> queue) {
 		t = threadFactory.newThread(this);
 		this.queue = queue;
 
@@ -33,7 +33,7 @@ public class ProducerNoSafe implements Runnable {
 
 	}
 
-	public void addTask(Action action) {
+	public void addTask(AbstractAction action) {
 
 		this.temp = action;
 		

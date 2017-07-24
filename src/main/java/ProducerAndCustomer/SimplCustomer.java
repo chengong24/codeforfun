@@ -4,10 +4,10 @@ import java.util.concurrent.BlockingQueue;
 
 public class SimplCustomer implements Runnable {
 
-	private BlockingQueue<Action> queue;
+	private BlockingQueue<AbstractAction> queue;
 	private Thread t;
 
-	public SimplCustomer(BlockingQueue<Action> queue) {
+	public SimplCustomer(BlockingQueue<AbstractAction> queue) {
 		this.queue = queue;
 
 		t = new Thread(this);
@@ -17,7 +17,7 @@ public class SimplCustomer implements Runnable {
 	@Override
 	public void run() {
 
-		Action task = null;
+		AbstractAction task = null;
 		try {
 			while ((task = queue.take()) != null) {
 

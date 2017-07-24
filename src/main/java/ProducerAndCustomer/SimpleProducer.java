@@ -5,16 +5,16 @@ import java.util.concurrent.ThreadFactory;
 
 public class SimpleProducer {
 
-	private BlockingQueue<Action> queue;
+	private BlockingQueue<AbstractAction> queue;
 
 
-	public SimpleProducer( BlockingQueue<Action> queue) {
+	public SimpleProducer( BlockingQueue<AbstractAction> queue) {
 		this.queue = queue;
 
 	}
 
 
-	public void addTask(Action action) {
+	public void addTask(AbstractAction action) {
 
 		if(!this.queue.offer(action)){
 		

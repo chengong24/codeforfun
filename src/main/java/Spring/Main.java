@@ -14,7 +14,7 @@ public class Main {
 		
 		
 		
-		LinkedList<E>
+//		LinkedList<E>
 
 	}
 }

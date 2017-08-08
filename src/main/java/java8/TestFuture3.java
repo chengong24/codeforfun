@@ -95,7 +95,6 @@ public class TestFuture3 {
 				}
 
 			}
-
 			return details;
 
 		});

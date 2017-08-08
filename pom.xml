@@ -21,7 +21,11 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>4.3.3.RELEASE</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>com.brandy</groupId>
+			<artifactId>mvc</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core -->
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>

@@ -1,4 +1,4 @@
-package Spring;
+package Spring.customer.annotation;
 
 import org.springframework.stereotype.Service;
 

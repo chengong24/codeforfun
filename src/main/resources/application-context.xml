@@ -21,7 +21,7 @@
 	         http://www.springframework.org/schema/cache/spring-cache.xsd
 	         http://www.springframework.org/schema/task
 	         http://www.springframework.org/schema/task/spring-task.xsd">
-	<context:component-scan base-package="Spring"></context:component-scan>
+	<context:component-scan base-package="Spring.*"></context:component-scan>
 	
 	 <!-- 缺省的异步任务线程池 --> 
  <task:annotation-driven executor="asyncExecutor" />

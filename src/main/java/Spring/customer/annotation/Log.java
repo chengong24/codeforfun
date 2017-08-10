@@ -1,4 +1,4 @@
-package Spring;
+package Spring.customer.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

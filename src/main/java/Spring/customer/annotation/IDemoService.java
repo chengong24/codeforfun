@@ -1,4 +1,4 @@
-package Spring;
+package Spring.customer.annotation;
 
 public interface IDemoService {
 

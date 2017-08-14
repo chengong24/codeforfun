@@ -28,6 +28,7 @@ public class LogAnnotationBeanPostProcesser extends AbstractBeanFactoryAwareAdvi
 		for (Method method : methods) {
 			if (method.isAnnotationPresent(Log.class)) {
 				ProxyFactory proxyFactory = prepareProxyFactory(bean, beanName);
+				System.out.println(proxyFactory);
 				if (!proxyFactory.isProxyTargetClass()) {
 					evaluateProxyInterfaces(bean.getClass(), proxyFactory);
 				}
